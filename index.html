@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Reviews Blog</title>
+    <style>
+        /* Global styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('http://www.pixelstalk.net/wp-content/uploads/2016/04/Best-space-wallpapers-for-desktop-picture-images.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header styles */
+        header {
+            background-color: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+
+        /* Main content styles */
+        main {
+            padding: 20px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        /* Card styles */
+        .card {
+            background-color: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .card img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+
+        .card h2 {
+            font-size: 1.5em;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+
+        .card p {
+            font-size: 1em;
+            margin: 10px 0;
+            color: white;
+        }
+
+        .rating {
+            font-size: 0.9em;
+            color: #ccc;
+            margin: 10px 0;
+        }
+
+        .read-more {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 5px 10px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .read-more:hover {
+            background-color: #0056b3;
+        }
+
+        /* Footer styles */
+        footer {
+            background-color: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>App Reviews Blog</h1>
+    </header>
+
+    <!-- Main content with app review cards -->
+    <main>
+        <div class="grid-container">
+            <!-- App Review Card 1 -->
+            <div class="card">
+                <img src="https://via.placeholder.com/100" alt="App One Icon">
+                <h2>App One</h2>
+                <p>A great app for productivity.</p>
+                <div class="rating">Rating: 4.5/5</div>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+
+            <!-- App Review Card 2 -->
+            <div class="card">
+                <img src="https://via.placeholder.com/100" alt="App Two Icon">
+                <h2>App Two</h2>
+                <p>An entertaining game for all ages.</p>
+                <div class="rating">Rating: 4.0/5</div>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+
+            <!-- App Review Card 3 -->
+            <div class="card">
+                <img src="https://via.placeholder.com/100" alt="App Three Icon">
+                <h2>App Three</h2>
+                <p>A useful tool for designers.</p>
+                <div class="rating">Rating: 4.8/5</div>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+
+            <!-- Add more cards here as needed -->
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2023 App Reviews Blog</p>
+    </footer>
+</body>
+</html>
